@@ -15,5 +15,5 @@ interface WorkoutDao {
     suspend fun deleteWorkout(workout: Workout)
 
     @Query("select * from workout")
-    fun getWorkouts(): Flow<Workout>
+    fun getWorkouts(): Flow<List<Workout>>
 }
